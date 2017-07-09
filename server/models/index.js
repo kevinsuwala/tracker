@@ -23,10 +23,10 @@ db.categories = require('../models/category.js')(sequelize, Sequelize);
 db.sessions = require('../models/session.js')(sequelize, Sequelize);
 
 // associations
-db.users.hasMany(db.sessions)
-db.users.hasMany(db.categories)
-db.sessions.belongsTo(db.users)
-db.categories.belongsTo(db.users)
+db.users.hasMany(db.sessions);
+db.users.hasMany(db.categories);
+db.sessions.belongsTo(db.users);
+db.categories.belongsTo(db.users);
 
 module.exports = db;
 

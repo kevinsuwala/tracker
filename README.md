@@ -19,6 +19,8 @@
 
 ### Running the Webapp
 - run ```npm run start```
+- send a post request to ```127.0.0.1:3001/api/utils/dummydata``` to generate dummy data
+
 ### API
 
 See [API documentation](api-documentation/), for example, to see user api info click [Users](api-documentation/endpoints/users.md)
